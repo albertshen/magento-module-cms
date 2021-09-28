@@ -155,19 +155,22 @@ class Filter
         } else {
             return [];
         }
-        
+
         $widget = ObjectManager::getInstance()->create($type, ['data' => $params]);
 
         if ($widget instanceof \Albert\Magento\Cms\Block\CmsBlockInterface) {
             $block = $this->_blockFactory->create();
             $block->setStoreId($params['store_id'])->load($params['block_id']);
+            if ($widget->getData('component')) {
+                return array_merge(['component' => $widget->getData('component')], ['items' => $this->filter($block->getContent())]);
+            }
             return $this->filter($block->getContent());
         }
         // // define widget block andcheck the type is instance of Widget Interface
         if (!$widget instanceof \Albert\Magento\Cms\Block\BlockInterface) {
             return [];
         }
-        //var_dump($widget->getData());exit;
+
         if ($widget->getData('component')) {
             return array_merge(['component' => $widget->getData('component')], $widget->getResults());
         }

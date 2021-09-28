@@ -19,6 +19,9 @@ class Component implements \Magento\Framework\Option\ArrayInterface
     {
         return [
             [
+                'value' => '', 'label' => __('-- Please Select --')
+            ],
+            [
                 'value' => 'CategoryProductsList', 'label' => __('Category Products List (Rest)')
             ],
             [
