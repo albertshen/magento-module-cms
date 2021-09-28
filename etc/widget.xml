@@ -7,7 +7,7 @@
 -->
 <widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
-    <widget id="products_list_rest" class="Albert\Widget\Block\Widget\ProductsList" is_email_compatible="true"
+    <widget id="products_list_rest" class="Albert\Magento\Cms\Block\Widget\ProductsList" is_email_compatible="true"
             placeholder_image="Magento_CatalogWidget::images/products_list.png" ttl="86400">
         <label translate="true">Catalog Products List (Rest)</label>
         <description translate="true">List of Products</description>
@@ -16,7 +16,7 @@
                 <label translate="true">Title</label>
             </parameter>
             <parameter name="component" xsi:type="select" visible="true"
-                       source_model="Albert\Widget\Model\Config\Source\Component">
+                       source_model="Albert\Magento\Cms\Model\Config\Source\Component">
                 <label translate="true">Component</label>
             </parameter>
             <parameter name="show_pager" xsi:type="select" visible="true"
@@ -48,7 +48,7 @@
             </parameter>
         </parameters>
     </widget>
-    <widget id="cms_block" class="Magento\Cms\Block\Widget\Block"
+    <widget id="cms_block" class="Albert\Magento\Cms\Block\Widget\Block"
             placeholder_image="Magento_Cms::images/widget_block.png">
         <label translate="true">CMS Block</label>
         <description translate="true">Contents of a Static Block</description>
