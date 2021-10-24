@@ -19,9 +19,6 @@ class ItemsComponent implements \Magento\Framework\Option\ArrayInterface
     {
         return [
             [
-                'value' => '', 'label' => __('-- Please Select --')
-            ],
-            [
                 'value' => 'Slider', 'label' => __('Slider')
             ],
             [

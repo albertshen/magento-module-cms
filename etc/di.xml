@@ -1,11 +1,6 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-<!-- 	<preference for="Magento\ProductVideo\Block\Adminhtml\Product\Edit\NewVideo" type="Learning\HelloPage\Block\Adminhtml\Product\Edit\NewVideo"/> -->
-<!--     <type name="Magento\Framework\View\Result\Page">
-        <arguments>
-            <argument name="layoutReaderPool" xsi:type="object">pageConfigRenderPool</argument>
-            <argument name="generatorPool" xsi:type="object">pageLayoutGeneratorPool</argument>
-            <argument name="template" xsi:type="string">Learning_HelloPage::root.phtml</argument>
-        </arguments>
-    </type> -->
+    <type name="Magento\Widget\Model\Widget">
+        <plugin name="image_uploader_solve" type="Albert\Magento\Cms\Plugin\Widget" sortOrder="1"/>
+    </type>
 </config>

@@ -70,13 +70,30 @@
                     </data>
                 </block>
             </parameter>
-            <parameter name="template" xsi:type="select" visible="true" required="true" sort_order="10">
-                <label translate="true">Template</label>
-                <options>
-                    <option name="default" value="widget/static_block/default.phtml" selected="true">
-                        <label translate="true">CMS Static Block Default Template</label>
-                    </option>
-                </options>
+        </parameters>
+    </widget>
+    <widget id="slider_item" class="Albert\Magento\Cms\Block\Widget\SliderItem"
+            placeholder_image="Magento_Cms::images/widget_block.png">
+        <label translate="true">Slider Item</label>
+        <description translate="true">Slider Item</description>
+        <parameters>
+            <parameter name="title" xsi:type="text" required="false" visible="true">
+                <label translate="true">Title</label>
+            </parameter>
+            <parameter name="component" xsi:type="select" visible="true"
+                       source_model="Albert\Magento\Cms\Model\Config\Source\ItemsComponent">
+                <label translate="true">Component</label>
+            </parameter>
+            <parameter name="image" xsi:type="block" visible="true" required="true" sort_order="20">
+                <label translate="true">Image</label>
+                <description translate="true">Image</description>
+                <block class="Albert\Magento\Cms\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
             </parameter>
         </parameters>
     </widget>
