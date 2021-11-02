@@ -5,9 +5,9 @@
 */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Albert_Cms" setup_version="1.0.1">
+    <module name="AlbertMage_Cms" setup_version="1.0.1">
         <sequence>
-            <module name="Albert_Webapi"/>
+            <module name="AlbertMage_Webapi"/>
         </sequence>
     </module>
 </config>

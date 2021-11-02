@@ -1,6 +1,6 @@
 <?php
 
-namespace Albert\Magento\Cms\Plugin;
+namespace AlbertMage\Cms\Plugin;
 
 class Widget
 {

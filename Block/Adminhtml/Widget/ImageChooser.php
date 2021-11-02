@@ -1,6 +1,6 @@
 <?php
 
-namespace Albert\Magento\Cms\Block\Adminhtml\Widget;
+namespace AlbertMage\Cms\Block\Adminhtml\Widget;
 
 use Magento\Framework\Data\Form\Element\AbstractElement;
 
@@ -43,7 +43,7 @@ class ImageChooser extends \Magento\Backend\Block\Template
             ->setDisabled($element->getReadonly());
 
             $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-            $image = $objectManager->create('\Albert\Magento\Cms\Helper\Image');
+            $image = $objectManager->create('\AlbertMage\Cms\Helper\Image');
             $imageElement = '<img src="'.$image->resize('/'.$element->getData('value'), 640, 480).'" />';
 
         // /** @var \Magento\Framework\Data\Form\Element\Text $input */

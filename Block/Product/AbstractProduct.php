@@ -2,14 +2,14 @@
 /**
  * @author <albertshen1206@gmail.com>
  */
-namespace Albert\Magento\Cms\Block\Product;
+namespace AlbertMage\Cms\Block\Product;
 
 use Magento\Catalog\Api\CategoryRepositoryInterface;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Framework\App\ObjectManager;
 use Magento\Rule\Model\Condition\Combine;
 
-abstract class AbstractProduct extends \Magento\Framework\DataObject implements \Albert\Magento\Cms\Block\BlockInterface
+abstract class AbstractProduct extends \Magento\Framework\DataObject implements \AlbertMage\Cms\Block\BlockInterface
 {
 
     /**

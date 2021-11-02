@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Albert\Magento\Cms\Model\Config\Source;
+namespace AlbertMage\Cms\Model\Config\Source;
 
 /**
  * @api

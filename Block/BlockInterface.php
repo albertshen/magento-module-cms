@@ -9,10 +9,10 @@
  *
  * @author <albertshen1206@gmail.com>
  */
-namespace  Albert\Magento\Cms\Block;
+namespace  AlbertMage\Cms\Block;
 
 /**
- * Interface \Albert\Magento\Cms\Block\BlockInterface
+ * Interface \AlbertMage\Cms\Block\BlockInterface
  */
 interface BlockInterface
 {

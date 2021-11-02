@@ -21,7 +21,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Albert\\Magento\\Cms\\": ""
+            "AlbertMage\\Cms\\": ""
         }
     }
 }

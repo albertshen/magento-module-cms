@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Albert\Magento\Cms\Model\Template;
+namespace AlbertMage\Cms\Model\Template;
 
 use Magento\Framework\App\ObjectManager;
 use Magento\Framework\Filter\DirectiveProcessor\DependDirective;
@@ -158,7 +158,7 @@ class Filter
 
         $widget = ObjectManager::getInstance()->create($type, ['data' => $params]);
 
-        if ($widget instanceof \Albert\Magento\Cms\Block\CmsBlockInterface) {
+        if ($widget instanceof \AlbertMage\Cms\Block\CmsBlockInterface) {
             $block = $this->_blockFactory->create();
             $block->setStoreId($params['store_id'])->load($params['block_id']);
             if ($widget->getData('component')) {
@@ -167,7 +167,7 @@ class Filter
             return $this->filter($block->getContent());
         }
         // // define widget block andcheck the type is instance of Widget Interface
-        if (!$widget instanceof \Albert\Magento\Cms\Block\BlockInterface) {
+        if (!$widget instanceof \AlbertMage\Cms\Block\BlockInterface) {
             return [];
         }
 

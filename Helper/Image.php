@@ -1,6 +1,6 @@
 <?php
 
-namespace Albert\Magento\Cms\Helper;
+namespace AlbertMage\Cms\Helper;
 
 use Magento\Framework\App\Filesystem\DirectoryList;
 
