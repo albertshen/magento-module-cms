@@ -1,7 +1,12 @@
 <?php
-
+/**
+ * Copyright © PHP Digital, Inc. All rights reserved.
+ */
 namespace AlbertMage\Cms\Plugin;
 
+/**
+ * @author Albert Shen <albertshen1206@gmail.com>
+ */
 class Widget
 {
     /**

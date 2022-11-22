@@ -1,13 +1,12 @@
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright © PHP Digital, Inc. All rights reserved.
  */
+namespace Albert\Magento\Cms\Block;
 
 /**
  * Widget Block Interface
- *
- * @author <albertshen1206@gmail.com>
+ * @author Albert Shen <albertshen1206@gmail.com>
  */
 namespace  AlbertMage\Cms\Block;
 

@@ -1,9 +1,14 @@
 <?php
-
+/**
+ * Copyright © PHP Digital, Inc. All rights reserved.
+ */
 namespace AlbertMage\Cms\Helper;
 
 use Magento\Framework\App\Filesystem\DirectoryList;
 
+/**
+ * @author Albert Shen <albertshen1206@gmail.com>
+ */
 class Image extends \Magento\Framework\App\Helper\AbstractHelper
 {
     /**

@@ -1,6 +1,7 @@
-<?php /**
-* Copyright © 2016 Magento. All rights reserved. * See COPYING.txt for license details.
-*/
+<?php
+/**
+ * Copyright © PHP Digital, Inc. All rights reserved.
+ */
 \Magento\Framework\Component\ComponentRegistrar::register( \Magento\Framework\Component\ComponentRegistrar::MODULE, 'AlbertMage_Cms',
 __DIR__
 );

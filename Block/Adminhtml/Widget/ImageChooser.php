@@ -1,9 +1,14 @@
 <?php
-
+/**
+ * Copyright © PHP Digital, Inc. All rights reserved.
+ */
 namespace AlbertMage\Cms\Block\Adminhtml\Widget;
 
 use Magento\Framework\Data\Form\Element\AbstractElement;
 
+/**
+ * @author Albert Shen <albertshen1206@gmail.com>
+ */
 class ImageChooser extends \Magento\Backend\Block\Template
 {
     /**

@@ -1,7 +1,6 @@
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright © PHP Digital, Inc. All rights reserved.
  */
 namespace AlbertMage\Cms\Model\Template;
 
@@ -16,7 +15,7 @@ use Magento\Framework\Filter\DirectiveProcessorInterface;
 
 /**
  * Template Filter Model
- * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
+ * @author Albert Shen <albertshen1206@gmail.com>
  */
 class Filter
 {
